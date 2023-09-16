@@ -11,6 +11,14 @@
 		1E249AE12AB5DEA8007F7657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AE02AB5DEA8007F7657 /* ContentView.swift */; };
 		1E249AE32AB5DEAB007F7657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E249AE22AB5DEAB007F7657 /* Assets.xcassets */; };
 		1E249AE72AB5DEAB007F7657 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E249AE62AB5DEAB007F7657 /* Preview Assets.xcassets */; };
+		1E249AEF2AB5DFEB007F7657 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AEE2AB5DFEB007F7657 /* OnboardingView.swift */; };
+		1E249AF22AB5E2F7007F7657 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AF12AB5E2F7007F7657 /* Font+.swift */; };
+		1E249AF52AB5E82A007F7657 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AF42AB5E82A007F7657 /* Shapes.swift */; };
+		1E249AF72AB5EA06007F7657 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AF62AB5EA06007F7657 /* CardView.swift */; };
+		1E249AF92AB5EBBC007F7657 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AF82AB5EBBB007F7657 /* IconView.swift */; };
+		1E249AFB2AB5F539007F7657 /* PaginationIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E249AFA2AB5F539007F7657 /* PaginationIndicatorView.swift */; };
+		1E38ED3A2AB5FDA2002D8AE8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E38ED392AB5FDA2002D8AE8 /* Colors.xcassets */; };
+		1E38ED3C2AB5FE63002D8AE8 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38ED3B2AB5FE63002D8AE8 /* Color+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		1E249AE22AB5DEAB007F7657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E249AE42AB5DEAB007F7657 /* WallpaperApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WallpaperApp.entitlements; sourceTree = "<group>"; };
 		1E249AE62AB5DEAB007F7657 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E249AEE2AB5DFEB007F7657 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1E249AF12AB5E2F7007F7657 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		1E249AF42AB5E82A007F7657 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		1E249AF62AB5EA06007F7657 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1E249AF82AB5EBBB007F7657 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		1E249AFA2AB5F539007F7657 /* PaginationIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationIndicatorView.swift; sourceTree = "<group>"; };
+		1E38ED392AB5FDA2002D8AE8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1E38ED3B2AB5FE63002D8AE8 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +68,13 @@
 		1E249ADD2AB5DEA8007F7657 /* WallpaperApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E249AED2AB5DFDE007F7657 /* Views */,
 				1E249ADE2AB5DEA8007F7657 /* WallpaperAppApp.swift */,
 				1E249AE02AB5DEA8007F7657 /* ContentView.swift */,
+				1E249AF32AB5E819007F7657 /* Components */,
+				1E249AF02AB5E2E6007F7657 /* Extensions */,
 				1E249AE22AB5DEAB007F7657 /* Assets.xcassets */,
+				1E38ED392AB5FDA2002D8AE8 /* Colors.xcassets */,
 				1E249AE42AB5DEAB007F7657 /* WallpaperApp.entitlements */,
 				1E249AE52AB5DEAB007F7657 /* Preview Content */,
 			);
@@ -67,6 +87,34 @@
 				1E249AE62AB5DEAB007F7657 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E249AED2AB5DFDE007F7657 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E249AEE2AB5DFEB007F7657 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E249AF02AB5E2E6007F7657 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E249AF12AB5E2F7007F7657 /* Font+.swift */,
+				1E38ED3B2AB5FE63002D8AE8 /* Color+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E249AF32AB5E819007F7657 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1E249AF42AB5E82A007F7657 /* Shapes.swift */,
+				1E249AF62AB5EA06007F7657 /* CardView.swift */,
+				1E249AF82AB5EBBB007F7657 /* IconView.swift */,
+				1E249AFA2AB5F539007F7657 /* PaginationIndicatorView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E38ED3A2AB5FDA2002D8AE8 /* Colors.xcassets in Resources */,
 				1E249AE72AB5DEAB007F7657 /* Preview Assets.xcassets in Resources */,
 				1E249AE32AB5DEAB007F7657 /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E249AF22AB5E2F7007F7657 /* Font+.swift in Sources */,
+				1E38ED3C2AB5FE63002D8AE8 /* Color+.swift in Sources */,
+				1E249AF92AB5EBBC007F7657 /* IconView.swift in Sources */,
+				1E249AFB2AB5F539007F7657 /* PaginationIndicatorView.swift in Sources */,
+				1E249AEF2AB5DFEB007F7657 /* OnboardingView.swift in Sources */,
 				1E249AE12AB5DEA8007F7657 /* ContentView.swift in Sources */,
 				1E249ADF2AB5DEA8007F7657 /* WallpaperAppApp.swift in Sources */,
+				1E249AF72AB5EA06007F7657 /* CardView.swift in Sources */,
+				1E249AF52AB5E82A007F7657 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +325,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wallpaper;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,20 +334,22 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WallpaperApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WallpaperApp.shohjahon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +366,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wallpaper;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,20 +375,22 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WallpaperApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WallpaperApp.shohjahon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
