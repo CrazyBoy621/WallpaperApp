@@ -11,7 +11,9 @@ import SwiftUI
 struct WallpaperAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

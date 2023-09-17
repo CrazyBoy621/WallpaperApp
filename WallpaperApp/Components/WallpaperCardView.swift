@@ -12,16 +12,6 @@ struct WallpaperCardView: View {
     let title: String
     let count: Int
     let image: String
-    let width: CGFloat
-    let height: CGFloat
-    
-    init(title: String, count: Int, image: String, width: CGFloat? = nil, height: CGFloat? = nil) {
-        self.title = title
-        self.count = count
-        self.image = image
-        self.width = width ?? 200
-        self.height = height ?? 300
-    }
     
     var body: some View {
         InformationView()

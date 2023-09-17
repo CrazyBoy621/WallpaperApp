@@ -27,12 +27,12 @@ struct OnboardingView: View {
             PaginationIndicatorView()
         }
         .overlay(
-            Button {
-                
+            NavigationLink {
+                HomeView()
             } label: {
                 NextButtonView()
-                    .padding(.bottom, -28)
             }
+                .padding(.bottom, -28)
             , alignment: .bottomTrailing
         )
         .padding(.bottom, 22)

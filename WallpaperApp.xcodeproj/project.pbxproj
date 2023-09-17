@@ -22,6 +22,7 @@
 		1E48E0A12AB6C50A00E11C14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E0A02AB6C50A00E11C14 /* HomeView.swift */; };
 		1E48E0A32AB6CD8200E11C14 /* WallpaperCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E0A22AB6CD8200E11C14 /* WallpaperCardView.swift */; };
 		1E48E0A52AB6DE9100E11C14 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E0A42AB6DE9100E11C14 /* CollectionView.swift */; };
+		1E48E0A72AB6FC8E00E11C14 /* DisplayWallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E0A62AB6FC8E00E11C14 /* DisplayWallpaperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		1E48E0A02AB6C50A00E11C14 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1E48E0A22AB6CD8200E11C14 /* WallpaperCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCardView.swift; sourceTree = "<group>"; };
 		1E48E0A42AB6DE9100E11C14 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		1E48E0A62AB6FC8E00E11C14 /* DisplayWallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWallpaperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				1E249AEE2AB5DFEB007F7657 /* OnboardingView.swift */,
 				1E48E0A02AB6C50A00E11C14 /* HomeView.swift */,
 				1E48E0A42AB6DE9100E11C14 /* CollectionView.swift */,
+				1E48E0A62AB6FC8E00E11C14 /* DisplayWallpaperView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				1E249AEF2AB5DFEB007F7657 /* OnboardingView.swift in Sources */,
 				1E249AE12AB5DEA8007F7657 /* ContentView.swift in Sources */,
 				1E249ADF2AB5DEA8007F7657 /* WallpaperAppApp.swift in Sources */,
+				1E48E0A72AB6FC8E00E11C14 /* DisplayWallpaperView.swift in Sources */,
 				1E249AF72AB5EA06007F7657 /* CardView.swift in Sources */,
 				1E249AF52AB5E82A007F7657 /* Shapes.swift in Sources */,
 			);
