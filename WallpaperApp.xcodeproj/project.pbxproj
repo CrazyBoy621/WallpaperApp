@@ -44,6 +44,7 @@
 		1E48E0A22AB6CD8200E11C14 /* WallpaperCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCardView.swift; sourceTree = "<group>"; };
 		1E48E0A42AB6DE9100E11C14 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		1E48E0A62AB6FC8E00E11C14 /* DisplayWallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWallpaperView.swift; sourceTree = "<group>"; };
+		1E48E0A82AB7486C00E11C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		1E249ADD2AB5DEA8007F7657 /* WallpaperApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E48E0A82AB7486C00E11C14 /* Info.plist */,
 				1E249AED2AB5DFDE007F7657 /* Views */,
 				1E249ADE2AB5DEA8007F7657 /* WallpaperAppApp.swift */,
 				1E249AE02AB5DEA8007F7657 /* ContentView.swift */,
@@ -341,7 +343,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WallpaperApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Wallpaper;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -382,7 +386,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WallpaperApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Wallpaper;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.\nWe need access to your photo library to save wallpapers and images you choose to your device.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

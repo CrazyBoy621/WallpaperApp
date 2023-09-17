@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import UIKit
+import Photos
 
 struct DisplayWallpaperView: View {
     
@@ -40,18 +40,26 @@ struct DisplayWallpaperView: View {
                 }
                 TabView(selection: $selectedIndex) {
                     ForEach(0..<collection.photos.count, id: \.self) { index in
-                        Image(collection.photos[index])
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 265, height: 525)
-                            .cornerRadius(20)
-                            .overlay(
-                                SetButtonView {
-                                    
-                                }
-                                , alignment: .bottom
-                            )
-                            .tag(index)
+                            Image(collection.photos[index])
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 265, height: 525)
+                                .cornerRadius(20)
+                                .tag(index)
+                                .overlay(
+                                    SetButtonView {
+                                        saveToPhotoLibrary(image: UIImage(named: collection.photos[index])!) { error in
+                                            if let error = error {
+                                                // Handle the error (e.g., show an alert)
+                                                print("Error saving photo: \(error.localizedDescription)")
+                                            } else {
+                                                // Photo saved successfully (you can show a success message)
+                                                print("Photo saved to library.")
+                                            }
+                                        }
+                                    }
+                                    , alignment: .bottom
+                                )
                     }
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
@@ -97,7 +105,7 @@ struct DisplayWallpaperView: View {
     
     @ViewBuilder func SetButtonView(_ action: @escaping () -> Void) -> some View {
         Button (action: action) {
-            Text("Set as wallpaper")
+            Text("Save to Library")
                 .foregroundStyle(
                     LinearGradient(colors: [Color.white, Color.white.opacity(0.7)], startPoint: .top, endPoint: .bottom))
                 .font(.sfProDisplay(size: 17, weight: .medium))
@@ -117,6 +125,25 @@ struct DisplayWallpaperView: View {
     
     func generateATitle(_ text: String) -> String {
         return String(text.split(separator: " ")[0])
+    }
+    
+    func saveToPhotoLibrary(image: UIImage, completion: @escaping (Error?) -> Void) {
+        PHPhotoLibrary.requestAuthorization { status in
+            if status == .authorized {
+                PHPhotoLibrary.shared().performChanges {
+                    let creationRequest = PHAssetChangeRequest.creationRequestForAsset(from: image)
+                    creationRequest.creationDate = Date() // You can set the creation date if needed
+                } completionHandler: { success, error in
+                    if success {
+                        completion(nil) // Photo saved successfully
+                    } else {
+                        completion(error) // There was an error saving the photo
+                    }
+                }
+            } else {
+                completion(nil) // Authorization denied or restricted
+            }
+        }
     }
 }
 
