@@ -115,7 +115,7 @@ struct OnboardingView: View {
             .fill(
                 LinearGradient(colors: [Color.white.opacity(0.1), Color.white.opacity(0.05)], startPoint: .top, endPoint: .bottom)
             )
-            .background(.ultraThinMaterial)
+            .background(.ultraThickMaterial)
             .cornerRadius(16)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)

@@ -10,4 +10,5 @@ import SwiftUI
 extension Color {
     static let nextButtonColor1 = Color("NextButtonColor1")
     static let nextButtonColor2 = Color("NextButtonColor2")
+    static let homeBackgroundColor = Color("HomeBackgroundColor")
 }
