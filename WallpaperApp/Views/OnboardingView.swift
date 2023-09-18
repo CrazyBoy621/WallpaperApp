@@ -32,7 +32,7 @@ struct OnboardingView: View {
             } label: {
                 NextButtonView()
             }
-                .padding(.bottom, -28)
+            .padding(.bottom, -28)
             , alignment: .bottomTrailing
         )
         .padding(.bottom, 22)

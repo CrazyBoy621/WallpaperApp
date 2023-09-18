@@ -12,6 +12,8 @@ struct HomeView: View {
     @State var selectedIndex = 0
     @State private var visibleIndex = 0
     
+    @AppStorage("isOnboardingFinished") var isOnboardingFinished = false
+    
     @StateObject var vm = HomeViewModel()
     
     var body: some View {
@@ -67,6 +69,9 @@ struct HomeView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationBarHidden(true)
         .background(Color.homeBackgroundColor.ignoresSafeArea())
+        .onAppear {
+            isOnboardingFinished = true
+        }
     }
     
     @ViewBuilder func HeaderView() -> some View {

@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("isOnboardingFinished") var isOnboardingFinished = false
+    
     var body: some View {
-        OnboardingView()
+        if isOnboardingFinished {
+            
+        } else {
+            OnboardingView()
+        }
     }
 }
 
